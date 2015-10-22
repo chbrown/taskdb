@@ -1,0 +1,48 @@
+{
+  "name": "taskdb-ui",
+  "description": "Annotate!",
+  "keywords": [
+    "annotate",
+    "label",
+    "user",
+    "interface"
+  ],
+  "version": "0.0.1",
+  "homepage": "https://github.com/chbrown/taskdb-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chbrown/taskdb-ui.git"
+  },
+  "author": "Christopher Brown <io@henrian.com> (http://henrian.com)",
+  "license": "MIT",
+  "dependencies": {
+    "jsonarea": "*",
+    "history": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "react-router": "^1.0.0-rc1",
+    "redux": "*",
+    "redux-router": "latest",
+    "whatwg-fetch": "*"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-plugin-react-transform": "*",
+    "css-loader": "*",
+    "express": "*",
+    "less": "*",
+    "less-loader": "*",
+    "react-hot-loader": "*",
+    "react-transform-catch-errors": "*",
+    "react-transform-hmr": "*",
+    "redbox-react": "*",
+    "redux-devtools": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-dev-middleware": "*",
+    "webpack-dev-server": "*",
+    "webpack-hot-middleware": "*"
+  }
+}
