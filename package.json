@@ -15,6 +15,7 @@
   },
   "author": "Christopher Brown <io@henrian.com> (http://henrian.com)",
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "jsonarea": "*",
     "history": "*",
@@ -27,8 +28,8 @@
     "whatwg-fetch": "*"
   },
   "devDependencies": {
-    "babel-core": "*",
-    "babel-loader": "*",
+    "babel-core": "^5.0.0",
+    "babel-loader": "^5.0.0",
     "babel-plugin-react-transform": "*",
     "css-loader": "*",
     "express": "*",
