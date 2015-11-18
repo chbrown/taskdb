@@ -1,11 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {pushState, replaceState} from 'redux-router';
-
-// import store from '../store';
 import {jsonOrDie} from '../common';
-
-// import WorkTask from './WorkTask';
 
 /**
 WorkRedirect handles the redirect from work/ to work/1708 or whatever
@@ -21,15 +17,15 @@ export class WorkRedirect extends React.Component {
     }
   }
   componentWillMount() {
-    console.log('WorkRedirect#componentWillMount()');
+    // console.log('WorkRedirect#componentWillMount()');
     this.redirectIfAvailable(this.props.tasks);
   }
   componentWillReceiveProps(nextProps) {
-    console.log('WorkRedirect#componentWillReceiveProps()');
+    // console.log('WorkRedirect#componentWillReceiveProps()');
     this.redirectIfAvailable(nextProps.tasks);
   }
   render() {
-    console.log('WorkRedirect#render()');
+    // console.log('WorkRedirect#render()');
     return <h3 className="hpad">Loading...</h3>;
   }
 }
@@ -47,7 +43,7 @@ export default class Work extends React.Component {
       fetch(`${this.props.server}/tasks/next`)
       .then(jsonOrDie)
       .then(tasks => {
-        console.log('Work#getAvailableTasks() fetched %d more tasks; adding to store', tasks.length);
+        // console.log('Work#getAvailableTasks() fetched %d more tasks; adding to store', tasks.length);
         this.props.dispatch({type: 'ADD_TASKS', tasks: tasks});
       })
       .catch(error => this.props.dispatch({type: 'LOG_ERRORS', errors: [error]}));
@@ -59,6 +55,7 @@ export default class Work extends React.Component {
     // console.log('Work#render()', available_tasks.length);
     return (
       <div>
+        <div className="work-status">{available_tasks.length} tasks reserved</div>
         {this.props.children}
       </div>
     );

@@ -23,7 +23,7 @@ function evalTemplate(template) {
 @connect(store => ({server: store.server}))
 class Task extends React.Component {
   componentDidMount() {
-    console.log('Task#componentDidMount()');
+    // console.log('Task#componentDidMount()');
     this.mounted = new Date();
   }
   onSubmit(value) {
@@ -46,7 +46,7 @@ class Task extends React.Component {
     .catch(error => this.props.dispatch({type: 'LOG_ERRORS', errors: [error]}));
   }
   render() {
-    console.log('Task#render()', this.props);
+    // console.log('Task#render()', this.props);
     let TaskTemplate = evalTemplate(this.props.compiled_template);
     return <TaskTemplate onSubmit={this.onSubmit.bind(this)} {...this.props.context} />;
   }

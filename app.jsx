@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import {Route, IndexRoute, IndexRedirect} from 'react-router';
 import {Provider} from 'react-redux';
 import {ReduxRouter} from 'redux-router';
-// import 'whatwg-fetch';
 
 import './site.less';
 
