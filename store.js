@@ -22,7 +22,8 @@ function mergeTask(tasks, new_task) {
   var existing_task = tasks.find(task => task.id === new_task.id);
   // remove any existing tasks that have the same id
   var filtered_tasks = tasks.filter(task => task.id !== new_task.id);
-  filtered_tasks.push({...new_task, ...existing_task});
+  // last assignment wins when using the object rest spread operator
+  filtered_tasks.push({...existing_task, ...new_task});
   return filtered_tasks;
 }
 
