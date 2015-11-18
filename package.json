@@ -24,8 +24,7 @@
     "react-redux": "*",
     "react-router": "^1.0.0-rc1",
     "redux": "*",
-    "redux-router": "latest",
-    "whatwg-fetch": "*"
+    "redux-router": "latest"
   },
   "devDependencies": {
     "babel-core": "^5.0.0",
