@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES6"
+  },
+  "files": [
+    "node_modules/declarations/async/async.d.ts",
+    "node_modules/declarations/lib/fetch.d.ts",
+    "node_modules/declarations/mocha/mocha.d.ts",
+    "node_modules/declarations/moment/moment-node.d.ts",
+    "node_modules/declarations/node/node.d.ts",
+    "node_modules/declarations/pg/pg.d.ts",
+    "node_modules/declarations/react-router/history.d.ts",
+    "node_modules/declarations/react-router/react-router.d.ts",
+    "node_modules/declarations/react-redux/react-redux.d.ts",
+    "node_modules/declarations/react-router-redux/react-router-redux.d.ts",
+    "node_modules/declarations/react/react-dom.d.ts",
+    "node_modules/declarations/react/react.d.ts",
+    "node_modules/declarations/request/request.d.ts",
+    "node_modules/declarations/yargs/yargs.d.ts",
+    "bin/taskdb.ts",
+    "components/admin/Task.tsx",
+    "components/admin/Tasks.tsx",
+    "components/admin/TaskType.tsx",
+    "components/admin/TaskTypes.tsx",
+    "components/admin/Worker.tsx",
+    "components/admin/Workers.tsx",
+    "components/Errors.tsx",
+    "components/Layout.tsx",
+    "components/Routes.tsx",
+    "components/Work.tsx",
+    "app.tsx",
+    "api.browser.ts",
+    "api.ts",
+    "models.ts",
+    "routes.ts",
+    "server.ts",
+    "util.ts"
+  ]
+}

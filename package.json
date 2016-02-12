@@ -1,48 +1,69 @@
 {
-  "name": "taskdb-ui",
-  "description": "Annotate!",
+  "name": "taskdb",
+  "description": "Annotation Task Database, Server, and UI",
   "keywords": [
+    "task",
     "annotate",
     "label",
     "user",
     "interface"
   ],
   "version": "0.0.1",
-  "homepage": "https://github.com/chbrown/taskdb-ui",
+  "homepage": "https://github.com/chbrown/taskdb",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chbrown/taskdb-ui.git"
+    "url": "https://github.com/chbrown/taskdb.git"
   },
   "author": "Christopher Brown <io@henrian.com> (http://henrian.com)",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "jsonarea": "*",
+    "async": "*",
+    "babel-core": "*",
     "history": "*",
+    "http-extend": "*",
+    "http-respond": "*",
+    "jsonarea": "*",
+    "loge": "*",
     "react": "*",
     "react-dom": "*",
     "react-redux": "*",
-    "react-router": "^1.0.0-rc1",
     "redux": "*",
-    "redux-router": "latest"
+    "request": "*",
+    "sql-patch": "*",
+    "sqlcmd-pg": "*",
+    "streaming": "*",
+    "urlio": "*",
+    "yargs": "*"
   },
   "devDependencies": {
-    "babel-core": "^5.0.0",
-    "babel-loader": "^5.0.0",
+    "babel-core": "*",
+    "babel-loader": "*",
     "babel-plugin-react-transform": "*",
+    "babel-plugin-transform-decorators-legacy": "*",
+    "babel-polyfill": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-1": "*",
+    "babel-preset-stage-2": "*",
     "css-loader": "*",
+    "declarations": "*",
     "express": "*",
     "less": "*",
     "less-loader": "*",
+    "mocha": "*",
     "react-hot-loader": "*",
-    "react-transform-catch-errors": "*",
     "react-transform-hmr": "*",
-    "redbox-react": "*",
     "redux-devtools": "*",
     "style-loader": "*",
+    "ts-loader": "*",
+    "typescript": "*",
     "webpack": "*",
     "webpack-dev-middleware": "*",
     "webpack-dev-server": "*",
     "webpack-hot-middleware": "*"
+  },
+  "bin": {
+    "taskdb": "bin/taskdb.js"
   }
 }
